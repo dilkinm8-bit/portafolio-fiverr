@@ -3,68 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dilkin | Desarrollador Web y Especialista en IA</title>
+    <title>Dilkin Maximiliano | Desarrollador Web y Especialista en IA</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Animación sutil al hacer hover en las tarjetas de proyecto */
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(59, 130, 246, 0.3);
+        }
+    </style>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
 
-    <header class="text-center py-20 bg-gray-800">
-        <h1 class="text-5xl font-extrabold mb-4 text-sky-400">Dilkin | Tu Desarrollador de Confianza</h1>
-        <p class="text-xl text-gray-400 max-w-2xl mx-auto">
-            Desarrollador Web Front-End (HTML/Tailwind) y Especialista en Herramientas de Automatización con Python y Gemini IA.
-        </p>
-    </header>
+    <nav class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-sm shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-sky-400">
+                Dilkin Maximiliano
+            </div>
+            <div class="space-x-4">
+                <a href="#acerca" class="hover:text-sky-400 transition">Acerca de Mí</a>
+                <a href="#habilidades" class="hover:text-sky-400 transition">Habilidades</a>
+                <a href="#proyectos" class="hover:text-sky-400 transition">Proyectos</a>
+                <a href="[ENLACE A TU PERFIL DE FIVERR]" target="_blank" class="bg-sky-600 px-4 py-2 rounded-lg font-semibold hover:bg-sky-700 transition">
+                    Contratar en Fiverr
+                </a>
+            </div>
+        </div>
+    </nav>
 
-    <section id="proyectos" class="py-16 px-4">
-        <h2 class="text-4xl font-bold text-center mb-12 text-white">🚀 Proyectos Destacados</h2>
-        
-        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+    <section class="min-h-[80vh] flex items-center justify-center text-center px-4 bg-gray-800/50 border-b border-gray-700">
+        <div class="max-w-4xl mx-auto py-20">
+            <p class="text-xl text-sky-400 mb-4 tracking-wider">HOLA, SOY DILKIN MAXIMILIANO</p>
+            <h1 class="text-6xl md:text-7xl font-extrabold mb-6 leading-tight">
+                Desarrollador Web y <span class="text-sky-400">Automatización con IA</span>
+            </h1>
+            <p class="text-2xl text-gray-400 mb-8">
+                Especializado en la creación de soluciones digitales rápidas con **Tailwind CSS** e integración de la **API de Gemini AI**.
+            </p>
+            <a href="#proyectos" class="bg-red-600 px-8 py-3 text-lg font-bold rounded-full hover:bg-red-700 transition shadow-lg">
+                Ver Proyectos
+            </a>
+        </div>
+    </section>
+
+    <section id="acerca" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-10 text-center text-white">Acerca de Mí y Mi Enfoque</h2>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <p class="text-gray-300 text-lg mb-4">
+                        Soy un desarrollador apasionado por la creación de valor a través de la tecnología. Mi enfoque abarca la **totalidad del proceso de desarrollo**: desde el diseño moderno y responsive de sitios web hasta la implementación de lógica avanzada con JavaScript y Python.
+                    </p>
+                    <p class="text-gray-300 text-lg mb-4">
+                        Me especializo en ofrecer a mis clientes **soluciones eficientes y funcionales**. Ya sea que necesites una **página web visualmente impactante** o una **herramienta de IA para automatizar tareas**, mi objetivo es la calidad y la entrega rápida.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700">
+                    <h3 class="text-xl font-bold mb-4 text-white">Datos Clave</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li>**Nacimiento:** Suiza</li>
+                        <li>**Ubicación Actual:** Argentina</li>
+                        <li>**Especialización:** Desarrollo Web (Front-End) & Automatización con IA.</li>
+                        <li>**Tecnologías Clave:** HTML/Tailwind CSS, JavaScript, Python/Streamlit, Gemini API.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="habilidades" class="py-20 px-4 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center text-white">Mi Stack Tecnológico</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-gray-800 p-5 rounded-lg text-center shadow-lg hover:bg-gray-700 transition">
+                    <p class="text-3xl mb-2">💻</p>
+                    <p class="font-semibold text-white">HTML & Tailwind CSS</p>
+                    <p class="text-sm text-gray-400">Diseño Moderno y Rápido</p>
+                </div>
+                <div class="bg-gray-800 p-5 rounded-lg text-center shadow-lg hover:bg-gray-700 transition">
+                    <p class="text-3xl mb-2">⚙️</p>
+                    <p class="font-semibold text-white">JavaScript (Vanilla JS)</p>
+                    <p class="text-sm text-gray-400">Lógica Frontend Interactiva</p>
+                </div>
+                <div class="bg-gray-800 p-5 rounded-lg text-center shadow-lg hover:bg-gray-700 transition">
+                    <p class="text-3xl mb-2">🐍</p>
+                    <p class="font-semibold text-white">Python & Streamlit</p>
+                    <p class="text-sm text-gray-400">Aplicaciones Web Sencillas</p>
+                </div>
+                <div class="bg-gray-800 p-5 rounded-lg text-center shadow-lg hover:bg-gray-700 transition">
+                    <p class="text-3xl mb-2">🧠</p>
+                    <p class="font-semibold text-white">Gemini AI / GenAI</p>
+                    <p class="text-sm text-gray-400">Automatización Inteligente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="py-20 px-4 bg-gray-800/50 border-t border-gray-700">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center text-white">Portafolio Interactivo (Muestra de Valor)</h2>
             
-            <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-sky-500/50 transition duration-300">
-                <h3 class="text-2xl font-semibold mb-3 text-sky-400">1. Landing Page Moderna</h3>
-                <p class="text-gray-300 mb-4">
-                    Diseño responsive y profesional usando Tailwind CSS. Ideal para negocios y servicios.
-                </p>
-                <a href="[ENLACE A TU LANDING PAGE CAFETERÍA]" target="_blank" class="text-white bg-sky-600 hover:bg-sky-700 font-bold py-2 px-4 rounded-lg inline-block transition duration-200">
-                    Ver Proyecto (Web)
-                </a>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-xl border border-gray-700 transition transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-sky-400">Landing Page (Tailwind CSS)</h3>
+                    <p class="text-gray-400 mb-4">
+                        Diseño moderno y 100% responsive. Perfecto para captar leads y presentar un servicio.
+                    </p>
+                    <span class="inline-block bg-green-900 text-green-300 text-xs px-3 py-1 rounded-full mb-4">Web Design</span>
+                    <a href="[ENLACE A TU LANDING PAGE CAFETERÍA]" target="_blank" class="text-white bg-sky-600 hover:bg-sky-700 font-bold py-2 px-4 rounded-lg block text-center transition duration-200 mt-4">
+                        Ver Demo (Gig Web)
+                    </a>
+                </div>
+
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-xl border border-gray-700 transition transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-sky-400">Lógica Frontend (JavaScript)</h3>
+                    <p class="text-gray-400 mb-4">
+                        Demostración de lógica pura y manipulación del DOM para crear funcionalidades interactivas (Calculadora).
+                    </p>
+                    <span class="inline-block bg-yellow-900 text-yellow-300 text-xs px-3 py-1 rounded-full mb-4">JavaScript Lógica</span>
+                    <a href="[ENLACE A TU CALCULADORA JS]" target="_blank" class="text-white bg-sky-600 hover:bg-sky-700 font-bold py-2 px-4 rounded-lg block text-center transition duration-200 mt-4">
+                        Ver Demo (Lógica)
+                    </a>
+                </div>
+
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-xl border border-gray-700 transition transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-sky-400">Generador de Ideas con IA</h3>
+                    <p class="text-gray-400 mb-4">
+                        Una aplicación web completa y funcional, construida con Python y Streamlit, impulsada por Gemini AI.
+                    </p>
+                    <span class="inline-block bg-purple-900 text-purple-300 text-xs px-3 py-1 rounded-full mb-4">Python & IA</span>
+                    <a href="[ENLACE A TU APP STREAMLIT DE IA]" target="_blank" class="text-white bg-sky-600 hover:bg-sky-700 font-bold py-2 px-4 rounded-lg block text-center transition duration-200 mt-4">
+                        Ver Demo (Gig IA)
+                    </a>
+                </div>
             </div>
 
-            <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-sky-500/50 transition duration-300">
-                <h3 class="text-2xl font-semibold mb-3 text-sky-400">2. Lógica Frontend (JS)</h3>
-                <p class="text-gray-300 mb-4">
-                    Demostración de lógica y funcionalidad pura con JavaScript, fundamental para la interactividad.
-                </p>
-                <a href="[ENLACE A TU CALCULADORA JS]" target="_blank" class="text-white bg-sky-600 hover:bg-sky-700 font-bold py-2 px-4 rounded-lg inline-block transition duration-200">
-                    Ver Proyecto (Lógica)
-                </a>
-            </div>
-
-            <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-sky-500/50 transition duration-300">
-                <h3 class="text-2xl font-semibold mb-3 text-sky-400">3. Generador de Ideas con IA</h3>
-                <p class="text-gray-300 mb-4">
-                    Herramienta web funcional creada con Python y Streamlit, impulsada por la API de Gemini.
-                </p>
-                <a href="[ENLACE A TU APP STREAMLIT DE IA]" target="_blank" class="text-white bg-sky-600 hover:bg-sky-700 font-bold py-2 px-4 rounded-lg inline-block transition duration-200">
-                    Ver Proyecto (IA)
+            <div class="text-center mt-12">
+                <a href="[ENLACE DIRECTO A TU PERFIL DE FIVERR]" target="_blank" class="text-xl font-bold py-3 px-8 rounded-full bg-red-600 hover:bg-red-700 text-white shadow-lg transition duration-300">
+                    ¿Te gusta lo que ves? ¡Contrátame en Fiverr!
                 </a>
             </div>
 
         </div>
     </section>
 
-    <section id="contacto" class="py-16 px-4 bg-gray-800 text-center">
-        <h2 class="text-3xl font-bold mb-4 text-white">¿Listo para Empezar tu Proyecto?</h2>
-        <p class="text-gray-400 mb-6 max-w-xl mx-auto">
-            Desde una landing page profesional hasta una herramienta de IA personalizada.
-        </p>
-        <a href="[ENLACE DIRECTO A TU PERFIL DE FIVERR]" target="_blank" class="text-xl font-bold py-3 px-8 rounded-full bg-red-600 hover:bg-red-700 text-white shadow-lg transition duration-300">
-            ¡Contáctame Ahora en Fiverr!
-        </a>
-    </section>
-
-    <footer class="py-6 text-center text-gray-500 text-sm">
-        © 2025 Dilkin. Desarrollado con HTML y Tailwind CSS.
+    <footer class="py-6 text-center text-gray-500 text-sm border-t border-gray-800">
+        © 2025 Dilkin Maximiliano. Desarrollado con HTML y Tailwind CSS.
     </footer>
 
 </body>
