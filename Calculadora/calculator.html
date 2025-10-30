@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Interactiva - Portafolio Fiverr</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos personalizados para la cuadrícula de la calculadora */
+        #calculator-grid {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: minmax(100px, auto) repeat(5, 70px);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="p-6 bg-white shadow-2xl rounded-2xl w-full max-w-sm">
+        
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Calculadora JS</h1>
+
+        <div class="bg-gray-900 text-white p-5 rounded-xl mb-4 shadow-inner overflow-hidden text-right">
+            <div id="previous-operand" class="text-xl text-gray-400 min-h-[30px] pr-1"></div>
+            <div id="current-operand" class="text-5xl font-light min-h-[50px]">0</div>
+        </div>
+
+        <div id="calculator-grid" class="grid gap-3">
+            
+            <button class="col-span-2 bg-red-500 hover:bg-red-600 text-white text-xl font-semibold rounded-lg shadow-md transition duration-150" data-operation="all-clear">AC</button>
+            <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 text-xl font-semibold rounded-lg shadow-md transition duration-150" data-operation="delete">DEL</button>
+            <button class="bg-amber-500 hover:bg-amber-600 text-white text-2xl font-semibold rounded-lg shadow-md transition duration-150" data-operation="divide">÷</button>
+            
+            <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xl font-semibold rounded-lg shadow-md transition duration-150" data-number>7</button>
+            <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xl font-semibold rounded-lg shadow-md transition duration-150" data-number>8</button>
+            <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xl font-semibold rounded-lg shadow-md transition duration-150" data-number>9</button>
+            <button class="bg-amber-500 hover:bg-amber-600 text-white text-2xl font-semibold rounded-lg shadow-md transition duration-150" data-operation="multiply">×</button>
+            
+            <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xl font-semibold rounded-lg shadow-md transition duration-150" data-number>4</button>
+            <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xl font-semibold rounded-lg shadow-md transition duration-150" data-number>5</button>
+            <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xl font-semibold rounded-lg shadow-md transition duration-150" data-number>6</button>
+            <button class="bg-amber-500 hover:bg-amber-600 text-white text-2xl font-semibold rounded-lg shadow-md transition duration-150" data-operation="subtract">-</button>
+            
+            <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xl font-semibold rounded-lg shadow-md transition duration-150" data-number>1</button>
+            <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xl font-semibold rounded-lg shadow-md transition duration-150" data-number>2</button>
+            <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xl font-semibold rounded-lg shadow-md transition duration-150" data-number>3</button>
+            <button class="bg-amber-500 hover:bg-amber-600 text-white text-2xl font-semibold rounded-lg shadow-md transition duration-150" data-operation="add">+</button>
+
+            <button class="col-span-2 bg-gray-200 hover:bg-gray-300 text-gray-800 text-xl font-semibold rounded-lg shadow-md transition duration-150" data-number>0</button>
+            <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xl font-semibold rounded-lg shadow-md transition duration-150" data-number>.</button>
+            <button class="bg-sky-500 hover:bg-sky-600 text-white text-2xl font-semibold rounded-lg shadow-md transition duration-150" data-operation="equals">=</button>
+        </div>
+
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
